@@ -1,52 +1,46 @@
 <div class="sidebar-wrapper sidebar-theme">
-            
-            <nav id="sidebar">
+   <nav id="sidebar">
+      <ul class="navbar-nav theme-brand flex-row  text-center">
+         <li class="nav-item theme-logo">
+            <a href="{{route('home')}}">
+               <img src="{{asset('img/logo.png')}}" class="navbar-logo" alt="logo">
+            </a>
+         </li>
+         <li class="nav-item theme-text">
+            <a href="{{route('home')}}" class="nav-link"> U.E.Y. </a>
+         </li>
+      </ul>
+      <ul class="list-unstyled menu-categories" id="accordionExample">
+         <li class="menu active">
+            <a href="#dashboard" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">
+               <div class="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                  <span>Tablero</span>
+               </div>
+            </a>
+         </li>
 
-                <ul class="navbar-nav theme-brand flex-row  text-center">
-                    <li class="nav-item theme-logo">
-                        <a href="{{route('home')}}">
-                            <img src="{{asset('img/logo.png')}}" class="navbar-logo" alt="logo">
-                        </a>
-                    </li>
-                    <li class="nav-item theme-text">
-                        <a href="{{route('home')}}" class="nav-link"> U.E.Y. </a>
-                    </li>
-                </ul>
+         <li class="menu menu-heading">
+            <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg><span>SECCIONES</span></div>
+         </li>
 
-                <ul class="list-unstyled menu-categories" id="accordionExample">
-                    <li class="menu active">
-                        <a href="#dashboard" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">
-                            <div class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-                                <span>Tablero</span>
-                            </div>
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                            </div>
-                        </a>
-                    </li>
+         <li class="menu">
+            <a href="apps_chat.html" aria-expanded="false" class="dropdown-toggle">
+               <div class="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-archive"><polyline points="21 8 21 21 3 21 3 8"></polyline><rect x="1" y="3" width="22" height="5"></rect><line x1="10" y1="12" x2="14" y2="12"></line></svg>
+                  <span>Materia</span>
+               </div>
+            </a>
+         </li>
 
-                    <li class="menu menu-heading">
-                        <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg><span>Secciones</span></div>
-                    </li>
-
-                    <li class="menu">
-                        <a href="apps_chat.html" aria-expanded="false" class="dropdown-toggle">
-                            <div class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-                                <span>Materia</span>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="menu">
+         <li class="menu">
                         <a href="apps_mailbox.html" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                                 <span>Mailbox</span>
                             </div>
                         </a>
-                    </li>
+         </li>
 
                     <li class="menu">
                         <a href="apps_todoList.html" aria-expanded="false" class="dropdown-toggle">
@@ -577,8 +571,6 @@
                         </a>
                     </li>
                     
-                </ul>
-                
-            </nav>
-
-        </div>
+      </ul>
+   </nav>
+</div>
